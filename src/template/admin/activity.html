@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	List of activities:
+	<ul>
+		{% for activity in activities %}
+			<li>
+				<div>
+					{{ activity.name }}
+				</div>
+			</li>
+    	{% endfor %}
+	</ul>
+	
+	<form action="/admin/activity" method="post">      
+      <input name="name" type="text" />
+      <input type="submit" value="Add">
+    </form>
+{% endblock %}

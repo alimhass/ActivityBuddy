@@ -1,0 +1,9 @@
+{% extends "../layout.html" %}
+
+{% block content %}
+	{% for activity in activities %}
+		<div>
+			<a href="/a/{{ activity.name }}">{{ activity.name }}</a>
+		</div>
+   	{% endfor %}
+{% endblock %}

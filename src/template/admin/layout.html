@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}ActivityBuddy{% endblock %}</title>
+</head>
+
+<body>
+
+	<div style="text-align:right;">
+		Dan L.
+		<a href="" style="font-size:10px;">settings</a>
+		<a href="" style="font-size:10px;">logout</a>
+	</div>
+    
+    <div style="text-align:center;">
+    	Admin
+    </div>
+    
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

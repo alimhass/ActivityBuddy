@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}ActivityBuddy{% endblock %}</title>
+</head>
+
+<body>
+
+	<div style="text-align:right;">
+		Dan L.
+		<a href="" style="font-size:10px;">settings</a>
+		<a href="" style="font-size:10px;">logout</a>
+	</div>
+    
+    <div style="text-align:center;">
+    	<form action="" method="GET">
+    		Search for an activity: <input name="s" type="text" /> in Montreal <a href="" style="font-size:10px;">change</a>
+    	</form>
+    	
+    	Your activities: <a href="/a/rockclimbing">Rock climbing</a> <a href="/a/tennis">Tennis</a> <a href="/a/gym">Gym</a> <a href="" style="font-size:10px;">settings</a>
+    </div>
+    
+    <hr />
+    
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
